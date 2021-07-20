@@ -1,6 +1,6 @@
-const MISION = 'We are an expert group in architectural design and interior design with a residential approach, where we generate creative, authentic and innovative solutions, achieving results that exced the expectations of each clients',
-  VISION = `<strong>VISION</strong>We are an expert group in architectural design and interior design with a residential approach, where we generate creative, authentic and innovative solutions, achieving results that exced the expectations of each clients`,
-  VALUES = `<strong>VALUES</strong>We are an expert group in architectural design and interior design with a residential approach, where we generate creative, authentic and innovative solutions, achieving results that exced the expectations of each clients`
+const MISION = 'We are an expert group in dermatology and skin care with a personal approach, where we generate creative, authentic and innovative solutions, achieving results that exced the expectations of each clients',
+  VISION = `<strong>long text for vision</strong>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Veniam eum magnam laudantium ducimus ea ipsam suscipit nam, porro odio distinctio.`,
+  VALUES = `<strong>Long text for values</strong>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Veniam eum magnam laudantium ducimus ea ipsam suscipit nam, porro odio distinctio.`
 
 const [misionBtn, visionBtn, valuesBtn] = Array.from(document.querySelectorAll('.buttonsGroup .btn')),
   MISION_VISION_TEXT = document.getElementById('mision-vision--text')
@@ -20,8 +20,25 @@ const changeText = (buttonClick, text, btn1, btn2) => {
   resetButtons(btn1, btn2)
 }
 
-misionBtn.addEventListener('click', () => changeText(misionBtn, MISION, visionBtn, valuesBtn))
+if(misionBtn)
+{
+  misionBtn.addEventListener('click', () => changeText(misionBtn, MISION, visionBtn, valuesBtn))
+}
+if(visionBtn)
+{
+  visionBtn.addEventListener('click', () => changeText(visionBtn, VISION, misionBtn, valuesBtn))
+}
+if(valuesBtn)
+{
+  valuesBtn.addEventListener('click', () => changeText(valuesBtn, VALUES, misionBtn, visionBtn))
+}
 
-visionBtn.addEventListener('click', () => changeText(visionBtn, VISION, misionBtn, valuesBtn))
+// LOADER
 
-valuesBtn.addEventListener('click', () => changeText(valuesBtn, VALUES, misionBtn, visionBtn))
+window.onload = () => {
+  let container = document.getElementById("loaderContainer")
+  let header = document.querySelector(".header")
+  container.style.visibility = "hidden"
+  container.style.opacity = "0"
+  header.classList.add('d-block')
+}

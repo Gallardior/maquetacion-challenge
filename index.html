@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,7 +9,8 @@
   <!-- Favicon -->
   <link rel="shortcut icon" href="img/LOGO-many.png" type="image/x-icon">
   <!-- BOOTSTRAP 4 -->
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
+    integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
   <!-- FOONT-Awesome -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
   <!-- Fonts -->
@@ -16,57 +18,72 @@
   <!-- STYLE.CSS -->
   <link rel="stylesheet" href="style.css">
 </head>
-<body data-spy="scroll" data-target="#myNav">
+
+<body data-spy="scroll" data-target="#myNav" class="">
+  <!-- LOADER -->
+  <div class="loaderContainer" id="loaderContainer">
+    <div class="loader"></div>
+  </div>
+
   <!-- HERO -->
   <div class="hero position-relative mb-5 " id="hero">
-    
+
     <div class="header container-fluid fixed-top">
       <div class="container">
         <div class="row justify-content-center  align-items-md-center py-2 py-sm-4">
-            <div class="col-6 col-sm-2">
-              <img src="img/LOGO-many.png" alt="Logo" class="logo mx-auto">
-            </div>
-            <div class="col-6 col-sm-4 text-center text-sm-left">
-              <p><strong>Openning Hour:</strong></p>
-              <p>Mon - Sat 8:00 - 17:30, Sunday - CLOSED</p>
-            </div>
-            <div class="col-6 col-sm-2 text-center text-sm-left">
-              <p><strong>Follow Us:</strong></p>
-              <p>
+          <div class="col-6 col-sm-2">
+            <img loading="lazy" src="img/LOGO-many.png" alt="Logo" class="logo mx-auto">
+          </div>
+          <div class="col-6 col-sm-4 text-center text-sm-left">
+            <p><strong>Openning Hour:</strong></p>
+            <p>Mon - Sat 8:00 - 17:30, Sunday - CLOSED</p>
+          </div>
+          <div class="col-6 col-sm-2 text-center text-sm-left">
+            <p><strong>Follow Us:</strong></p>
+            <p>
+              <a href="#">
                 <i class="fab fa-facebook-square mr-1  mr-lg-3"></i>
+              </a>
+              <a href="#">
                 <i class="fab fa-twitter mr-1  mr-lg-3"></i>
+              </a>
+              <a href="#">
                 <i class="fab fa-instagram mr-1  mr-lg-3"></i>
+              </a>
+              <a href="#">
                 <i class="fab fa-linkedin mr-1  mr-lg-3"></i>
-              </p>
-            </div>
-            <div class="col-6 col-sm-4 text-center text-sm-left">
-              <p><strong>Free Call: </strong>+1 234 456 78910</p>
-              <p>Call Us Now 24/7 Custommer Support</p>
-            </div>
+              </a>
+            </p>
+          </div>
+          <div class="col-6 col-sm-4 text-center text-sm-left">
+            <p><strong>Free Call: </strong>+1 234 456 78910</p>
+            <p>Call Us Now 24/7 Custommer Support</p>
+          </div>
         </div>
       </div>
       <div class="row">
-        <nav class="navbar navbar-expand navbar-light col" id="myNav">
-          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-              <span class="navbar-toggler-icon"></span>
+        <nav class="navbar navbar-expand-sm navbar-light col" id="myNav">
+          <button class="navbar-toggler ml-auto type=" button" data-toggle="collapse" data-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
           </button>
           <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
             <ul class="navbar-nav px-2 flex-wrap justify-content-center">
-                <li class="nav-item">
-                  <a class="nav-link" href="#hero">HOME</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#about">ABOUT US</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#services">SERVICES US</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#gallery">GALLERY</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#contact">CONTACT US</a>
-                </li>
+              <li class="nav-item active">
+                <a class="nav-link" href="index.html">HOME</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="pages/about.html">ABOUT US</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="pages/services.html">SERVICES US</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="pages/gallery.html">GALLERY</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="pages/contact.html">CONTACT US</a>
+              </li>
             </ul>
           </div>
         </nav>
@@ -75,7 +92,7 @@
 
     <div class="video-background position-absolute">
       <video id="bgvid" autoplay loop muted playsinline>
-        <source src="video/hero-background.mp4" type="video/mp4">
+        <source src="video/Hero-Background.m4v" type="video/mp4">
       </video>
     </div>
     <div class="video-filter position-absolute">
@@ -83,8 +100,10 @@
     <div class="container hero-content">
       <div class="row align-items-center">
         <div class="col-12 col-sm-7 text-center text-sm-left">
-          <h1 class="mb-5">We created the desiret Home for you</h1>
-          <h2>Contact us to find out your ideas and build them together</h2>
+          <h1 class="mb-5">We repair your skin</h1>
+          <h2>Contact us to get the best dermatological treatment</h2>
+          <a class="btn btn-primary mx-auto d-block text-white d-block d-sm-none mt-4"
+            href="./pages/contact.html">CONTACT US!</a>
         </div>
         <form class="offset-1 offset-sm-0 col-10 col-sm-5 p-4 p-lg-5 heroForm d-none d-sm-block">
           <h3>Make a reservation</h3>
@@ -124,89 +143,92 @@
 
   </div>
 
-  <main>
+  <main class="">
     <!-- WORKUS -->
     <section class="container py-0 pb-5 py-md-5 workUs" id="about">
       <div class="row align-items-center">
         <div class="offset-2 offset-md-0 order-md-0 order-1 col-8 col-md-6 workUs-img">
-          <img src="img/about.jpg" alt="about">
-          <i class="fas fa-hammer"></i>
+          <img loading="lazy" src="img/about.jpg" alt="about">
+          <i class="fas fa-diagnoses"></i>
         </div>
         <div class="col-12 col-md-6 workUs-content p-5">
-          <strong class="d-block mb-3">WELCOME TO THE CONSTRUCTION COMPANY</strong>
+          <strong class="d-block mb-3">WELCOME TO THE SKINCARE COMPANY</strong>
           <h2 class="U-flow-title mb-5">Why work with us?</h2>
           <p class="U-flow-text pl-3 mb-4">
-            We are a company with highly qualifield and responsible personnel who will perform the best jobs for your home.
+            We are a company with highly qualified and responsible personnel who will perform the best care for your
+            skin.
           </p>
           <ul class="p-0 m-0">
             <li>
               <p>
-                Quality Construction  
+                Laser depilation
               </p>
-              <img src="img/work-4.jpg">
+              <img loading="lazy" src="img/work-4.jpg">
             </li>
             <li>
               <p>
-                Professional Llabillty  
+                Cellulite Removal
               </p>
-              <img src="img/work-5.jpg">
+              <img loading="lazy" src="img/work-5.jpg">
             </li>
             <li>
               <p>
-                Dedicated to Clients  
+                Treatment for hair
               </p>
-              <img src="img/work-7.jpg">
+              <img loading="lazy" src="img/work-7.jpg">
             </li>
           </ul>
         </div>
       </div>
     </section>
 
-    <!-- SERVICES -->
+    <!-- ABOUT US - SERVICES -->
     <section class="container-fluid py-5 services" id="services">
       <div class="container">
         <div class="row">
-        <div class="col-12 mb-5 mb-md-0 col-md-8 services-content services-content--left pr-md-5">
-          <strong class="d-block mb-2">ABOUT US</strong>
-          <h2 class="U-flow-title mb-3">Best Provider for Industrial Services</h2>
-          <p class="U-flow-text mb-5 U-bold">
-            We are a unique company dedicated to our clients
-          </p>
-          <div class="buttonsGroup d-flex mb-5">
-            <button type="submit" class="btn btn-primary d-block w-100 mr-3 btn-active">Our Mision</button>
-            <button type="submit" class="btn btn-primary d-block w-100 btn-normal">Our Vision</button>
-            <button type="submit" class="btn btn-primary d-block w-100 ml-3 btn-normal">Our Values</button>
+          <div class="col-12 mb-5 mb-md-0 col-md-8 services-content services-content--left pr-md-5">
+            <strong class="d-block mb-2">ABOUT US</strong>
+            <h2 class="U-flow-title mb-3">Best Provider for Dermatology Services</h2>
+            <p class="U-flow-text mb-5 U-bold">
+              We are a company dedicated to our clients
+            </p>
+            <div class="buttonsGroup d-flex mb-5">
+              <button type="submit" class="btn btn-primary d-block w-100 mr-3 btn-active">Our Mision</button>
+              <button type="submit" class="btn btn-primary d-block w-100 btn-normal">Our Vision</button>
+              <button type="submit" class="btn btn-primary d-block w-100 ml-3 btn-normal">Our Values</button>
+            </div>
+            <p class="U-flow-text mb-5 p-4" id="mision-vision--text">
+              We are an expert group in dermatology and skin care with a personal approach, where we generate creative,
+              authentic and innovative solutions, achieving results that exced the expectations of each clients
+            </p>
+            <a class="btn btn-primary mx-auto d-block text-white" href="./pages/contact.html">CONTACT US!</a>
           </div>
-          <p class="U-flow-text mb-5 p-4" id="mision-vision--text">
-            We are an expert group in architectural design and interior design with a residential approach, where we generate creative, authentic and innovative solutions, achieving results that exced the expectations of each clients
-          </p>
-          <button class="btn btn-primary d-block mx-auto">CONTACT US!</button>
-        </div>
-        <div class="col-12 mb-4 mb-md-0 col-md-4 services-content services-content--right">
-          <strong class="d-block mb-2">SERVICES</strong>
-          <h2 class="U-flow-title mb-4">know what we ofer you</h2>
-          <div class="service-card p-3 p-lg-4 d-flex align-items-center">
-            <i class="fas fa-drafting-compass mr-3"></i>
-            <div class="service-card-content">
-              <p class="U-bold">Interior Design</p>
-              <p class="">We are design the best interiours for your home full of styles and confort</p>
+          <div class="col-12 mb-4 mb-md-0 col-md-4 services-content services-content--right">
+            <strong class="d-block mb-2">SERVICES</strong>
+            <h2 class="U-flow-title mb-4">The best for you</h2>
+            <div class="service-card p-3 p-lg-4 d-flex align-items-center">
+              <i class="fas fa-crutch mr-3"></i>
+              <div class="service-card-content">
+                <p class="U-bold">Laser depilation</p>
+                <p class="">We have the best laser hair removal service, fast and efficient.</p>
+              </div>
+            </div>
+            <div class="service-card service-card--orange p-3 p-lg-4 d-flex align-items-center">
+              <i class="fas fa-eye-dropper mr-3"></i>
+              <div class="service-card-content">
+                <p class="U-bold">Cellulite Removal</p>
+                <p class="">We help you eliminate most cellulite with our innovative treatment</p>
+              </div>
+            </div>
+            <div class="service-card service-card--blue p-3 p-lg-4 d-flex align-items-center">
+              <i class="fas fa-flask mr-3"></i>
+              <div class="service-card-content">
+                <p class="U-bold">Treatment for hair</p>
+                <p class="">We have the best treatment to prevent and stop hair loss, in addition to accelerating growth
+                </p>
+              </div>
             </div>
           </div>
-          <div class="service-card service-card--orange p-3 p-lg-4 d-flex align-items-center">
-            <i class="fas fa-wrench mr-3"></i>
-            <div class="service-card-content">
-              <p class="U-bold">Plumbing</p>
-              <p class="">We help you repair your plumbing. Our service is of quality</p>
-            </div>
-          </div>
-          <div class="service-card service-card--blue p-3 p-lg-4 d-flex align-items-center">
-            <i class="fas fa-paint-roller mr-3"></i>
-            <div class="service-card-content">
-              <p class="U-bold">Painting</p>
-              <p class="">Painting your house is a task that we can do for you, in a short time</p>
-            </div>
-          </div>
-        </div>
         </div>
       </div>
     </section>
@@ -217,23 +239,23 @@
         <div class="row py-3 py-sm-5">
           <div class="col-12 gallery-content">
             <strong class="d-block mb-2">OUR PROJECTS</strong>
-            <h2 class="U-flow-title mb-3">know what we do</h2>
+            <h2 class="U-flow-title mb-3">Look at our work</h2>
             <div class="imagesGroup d-flex mb-5">
-              <img src="img/work-5.jpg">
-              <img src="img/work-6.jpg">
-              <img src="img/work-7.jpg">
-              <img src="img/work-8.jpg">
-              <img src="img/work-1.jpg">
+              <img loading="lazy" src="img/work-5.jpg">
+              <img loading="lazy" src="img/work-6.jpg">
+              <img loading="lazy" src="img/work-7.jpg">
+              <img loading="lazy" src="img/work-8.jpg">
+              <img loading="lazy" src="img/work-1.jpg">
             </div>
-            <button class="btn btn-primary d-block mx-auto px-3">VIEW GALLERY</button>
+            <a class="btn btn-primary d-block mx-auto px-3 text-white" href="./pages/gallery.html">VIEW GALLERY</a>
           </div>
         </div>
       </div>
     </section>
 
     <!-- TESTIMONIOS -->
-    <section class="container-fluid py-5 my-md-5 testimony-fluid">
-      <div class="container testimony py-5">
+    <section class="container-fluid py-5 my-md-5 testimony">
+      <div class="container  py-5">
         <div class="filter"></div>
         <div class="row p-5 align-items-center">
           <div class="col-12 col-md-6 testimony-content px-sm-5 text-center">
@@ -251,37 +273,42 @@
               </ol>
               <div class="carousel-inner">
                 <div class="carousel-item active">
-                  <img src="img/person_1.jpg" class="d-block w-100" alt="...">
-                  <div class="carousel-caption d-none d-md-block">
+                  <img loading="lazy" src="img/person_1.jpg" class="d-block w-100" alt="...">
+                  <div class="carousel-caption d-block">
                     <h5 class="testimony-name">Rival Jorsh</h5>
+                    <p>Excellent service, my skin is like new.</p>
                   </div>
                 </div>
                 <div class="carousel-item">
-                  <img src="img/person_2.jpg" class="d-block w-100" alt="...">
-                  <div class="carousel-caption d-none d-md-block">
+                  <img loading="lazy" src="img/person_2.jpg" class="d-block w-100" alt="...">
+                  <div class="carousel-caption d-block">
                     <h5 class="testimony-name">Jenifer Biden</h5>
+                    <p>Excellent service, my skin is like new.</p>
                   </div>
                 </div>
                 <div class="carousel-item">
-                  <img src="img/person_3.jpg" class="d-block w-100" alt="...">
-                  <div class="carousel-caption d-none d-md-block">
+                  <img loading="lazy" src="img/person_3.jpg" class="d-block w-100" alt="...">
+                  <div class="carousel-caption d-block">
                     <h5 class="testimony-name">Angela Biden</h5>
+                    <p>Excellent service, my skin is like new.</p>
                   </div>
                 </div>
                 <div class="carousel-item">
-                  <img src="img/person_4.jpg" class="d-block w-100" alt="...">
-                  <div class="carousel-caption d-none d-md-block">
+                  <img loading="lazy" src="img/person_4.jpg" class="d-block w-100" alt="...">
+                  <div class="carousel-caption d-block">
                     <h5 class="testimony-name">Jeff Freshman</h5>
+                    <p>Excellent service, my skin is like new.</p>
                   </div>
                 </div>
                 <div class="carousel-item">
-                  <img src="img/person_5.jpg" class="d-block w-100" alt="...">
-                  <div class="carousel-caption d-none d-md-block">
+                  <img loading="lazy" src="img/person_5.jpg" class="d-block w-100" alt="...">
+                  <div class="carousel-caption d-block">
                     <h5 class="testimony-name">Emily Biden</h5>
+                    <p>Excellent service, my skin is like new.</p>
                   </div>
                 </div>
               </div>
-              
+
             </div>
           </div>
         </div>
@@ -296,12 +323,23 @@
             <strong class="d-block mb-2">OUR SOCIAL MEDIA</strong>
             <h2 class="U-flow-title mb-3">Follow us on Social Media</h2>
           </div>
-          <div class="col-12 col-md-6 social-content--right d-flex align-items-center justify-content-center justify-content-md-end">
-            <i class="fab fa-twitter mr-5"></i>
-            <i class="fab fa-facebook-f mr-5"></i>
-            <i class="fab fa-youtube mr-5"></i>
-            <i class="fab fa-instagram mr-5"></i>
-            <i class="fab fa-linkedin-in mr-2"></i>
+          <div
+            class="col-12 col-md-6 social-content--right d-flex align-items-center justify-content-center justify-content-md-end">
+            <a href="#">
+              <i class="fab fa-twitter mr-5"></i>
+            </a>
+            <a href="#">
+              <i class="fab fa-facebook-f mr-5"></i>
+            </a>
+            <a href="#">
+              <i class="fab fa-youtube mr-5"></i>
+            </a>
+            <a href="#">
+              <i class="fab fa-instagram mr-5"></i>
+            </a>
+            <a href="#">
+              <i class="fab fa-linkedin-in mr-2"></i>
+            </a>
           </div>
         </div>
       </div>
@@ -309,17 +347,18 @@
 
     <!-- NEWSLETTER -->
     <section class="container newsletter mb-5">
-        <div class="row">
-          <div class="col-12 newsletter-content py-4 d-flex align-items-center justify-content-center flex-md-row flex-column">
-            <h4 class="m-0 mr-md-5 U-bold mb-4 mb-md-0">Suscribe to our Newsletter</h4>
-            <form class="form-inline align-items-start">
-              <div class="form-group d-flex">
-                <input type="email" class="form-control" placeholder="Email">
-              </div>
-              <button type="submit" class="btn btn-primary">Suscribe</button>
-            </form>
-          </div>
+      <div class="row">
+        <div
+          class="col-12 newsletter-content py-4 d-flex align-items-center justify-content-center flex-md-row flex-column">
+          <h4 class="m-0 mr-md-5 U-bold mb-4 mb-md-0">Suscribe to our Newsletter</h4>
+          <form class="form-inline align-items-start">
+            <div class="form-group d-flex">
+              <input type="email" class="form-control" placeholder="Email">
+            </div>
+            <button type="submit" class="btn btn-primary">Suscribe</button>
+          </form>
         </div>
+      </div>
     </section>
 
     <!-- Contact Us -->
@@ -327,67 +366,77 @@
       <div class="container">
         <div class="row">
           <div class="col-12 col-sm-4 mb-sm-0 mb-4">
-          <strong>Office Contact</strong>
-          <p class="mt-4"> 
-            <i class="fas fa-map-marker-alt mr-2"></i>
-            123, Street, New York, USA
-          </p>
-          <p> 
-            <i class="fa fa-phone mr-2"></i>
-            +012 345 67890
-          </p>
-          <p> 
-            <i class="fas fa-envelope mr-2"></i>
-            info@example.com
-          </p>
-          <div class="socials">
-            <i class="fab fa-twitter p-2"></i>
-            <i class="fab fa-facebook-f p-2"></i>
-            <i class="fab fa-youtube p-2"></i>
-            <i class="fab fa-instagram p-2"></i>
-            <i class="fab fa-linkedin-in p-2"></i>
-          </div>
+            <strong>Office Contact</strong>
+            <p class="mt-4">
+              <i class="fas fa-map-marker-alt mr-2"></i>
+              123, Street, New York, USA
+            </p>
+            <p>
+              <i class="fa fa-phone mr-2"></i>
+              +012 345 67890
+            </p>
+            <p>
+              <i class="fas fa-envelope mr-2"></i>
+              info@example.com
+            </p>
+            <div class="socials">
+              <a href="#">
+                <i class="fab fa-twitter p-2"></i>
+              </a>
+              <a href="#">
+                <i class="fab fa-facebook-f p-2"></i>
+              </a>
+              <a href="#">
+                <i class="fab fa-youtube p-2"></i>
+              </a>
+              <a href="#">
+                <i class="fab fa-instagram p-2"></i>
+              </a>
+              <a href="#">
+                <i class="fab fa-linkedin-in p-2"></i>
+              </a>
+            </div>
           </div>
           <div class="col-12 col-sm-4 mb-sm-0 mb-4">
             <strong>Services Areas</strong>
-            <p class="mt-4"> 
+            <p class="mt-4">
               <i class="fas fa-chevron-right mr-2"></i>
-              Building Construction
+              Laser depilation
             </p>
-            <p class="mt-4"> 
+            <p class="mt-4">
               <i class="fas fa-chevron-right mr-2"></i>
-              House Renovation
+              Cellulite Removal
             </p>
-            <p class="mt-4"> 
+            <p class="mt-4">
               <i class="fas fa-chevron-right mr-2"></i>
-              Architecture Design
+              Treatment for hair
             </p>
-            <p class="mt-4"> 
+            <p class="mt-4">
               <i class="fas fa-chevron-right mr-2"></i>
-              Interior Design
+              Acne Removal
             </p>
-            <p class="mt-4"> 
+            <p class="mt-4">
               <i class="fas fa-chevron-right mr-2"></i>
-              Painting
+              Stain Removal
             </p>
           </div>
           <div class="col-12 col-sm-4 mb-sm-0 mb-4">
             <strong>Useful Pages</strong>
-            <p class="mt-4"> 
+            <p class="mt-4">
               <i class="fas fa-chevron-right mr-2"></i>
-              About Us
+              <a href="pages/about.html">About Us</a>
             </p>
-            <p class="mt-4"> 
+            <p class="mt-4">
               <i class="fas fa-chevron-right mr-2"></i>
-              Services
+              <a href="pages/services.html">Services</a>
             </p>
-            <p class="mt-4"> 
+            <p class="mt-4">
               <i class="fas fa-chevron-right mr-2"></i>
-              Gallery
+              <a href="pages/gallery.html">Gallery</a>
             </p>
-            <p class="mt-4"> 
+            <p class="mt-4">
               <i class="fas fa-chevron-right mr-2"></i>
-              Contact Us
+              <a href="pages/contact.html">Contact Us</a>
             </p>
           </div>
         </div>
@@ -401,20 +450,24 @@
     <div class="container">
       <div class="row">
         <div class="col text-center">
-          <p class="m-0">&copy Copyright <strong>Company Name</strong> . All Right Reserveds</p>
-          <p class="m-0">This Website Was Designed and Developed by <strong>Creator Name</strong> </p>
-          <img src="img/Logo-JS-White-Wshadow.png" alt="">
+          <p class="m-0">&copy Copyright <strong>Skin Care</strong> . All Right Reserveds</p>
+          <p class="m-0">This Website Was Designed and Developed by <strong>Jesus Gallardo</strong> </p>
         </div>
       </div>
     </div>
   </footer>
 
 
-  
-
-  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.min.js" integrity="sha384-+YQ4JLhjyBLPDQt//I+STsc9iw4uQqACwlvpslubQzn4u2UU2UFM80nGisd026JF" crossorigin="anonymous"></script>
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+    integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.min.js"
+    integrity="sha384-+YQ4JLhjyBLPDQt//I+STsc9iw4uQqACwlvpslubQzn4u2UU2UFM80nGisd026JF"
+    crossorigin="anonymous"></script>
   <script src="app.js"></script>
 </body>
+
 </html>
